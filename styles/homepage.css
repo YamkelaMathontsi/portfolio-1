@@ -1,0 +1,288 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links {
+  display: flex;
+  list-style-type: none;
+  flex-direction: column;
+  background: white;
+  /* background-image: url(./history.jpg); */
+  background-size: cover;
+  background-attachment: fixed;
+  position: fixed;
+  top: -100%;
+  left: -100%;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  gap: 20px;
+  font-family: sans-serif;
+  transition: all 0.3s linear;
+}
+
+.navbar-links.active {
+  top: 0;
+  left: 0;
+  background-color: black;
+  color: white;
+}
+
+.mainButton{
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-button {
+  /* position: fixed; */
+  top: 0;
+  right: 0;
+  /* z-index: 100; */
+  font-size: 15px;
+  background: none;
+  border: 2px black solid;
+  outline: none;
+  padding: 10px;
+}
+
+
+.navbar-link {
+  margin: 10px;
+}
+
+/* .navbar-button {
+  border: solid 1px;
+  padding: 5px;
+  color: black;
+  text-decoration: none;
+} */
+
+
+
+
+.navbar-anchor {
+  border: solid 1px;
+  margin: 10px;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+  cursor: grab;
+}
+.navbar-link {
+  margin: 10px;
+  cursor: grab;
+}
+
+/* .navbar-anchor:hover {
+  cursor: pointer;
+} */
+
+
+.heading-4 {
+  font-size: 10px;
+  position: absolute;
+  left: 50px;
+  top: 0;
+  letter-spacing: 10px;
+  margin-top: 20px;
+}
+
+.main-footer {
+  font-size: 10px;
+  position: absolute;
+  bottom: 1;
+  top: 90vh;
+  letter-spacing: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -250px;
+}
+
+body {
+  background-color: white;
+  color: black;
+  font-size: larger;
+}
+
+
+.top{
+  display: flex;
+  justify-content: end;
+  color: white;
+  background-color: black;
+  height: 5vh;
+}
+.top-opt{
+  margin-top: 15px;
+}
+.options{
+  text-decoration: none;
+  color: white;
+  border: 2px solid white;
+  padding: 7px;
+  text-transform: uppercase;
+  margin-right: 20px;
+  font-family: 'Bonheur Royale', cursive;
+  letter-spacing: 3px;
+
+}
+
+.typed-text{
+  font-size: 30px;
+  position: fixed;
+  left: 5%;
+  font-family: 'Bonheur Royale', cursive;
+  letter-spacing: 3px;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  /* font-size: larger; */
+  border: 3px solid black;
+  background-color: #ebebeb;
+}
+
+.image {
+  background-image: url(../images/Yamkela\ Mathontsi.JPG);
+  height: 80vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* filter: grayscale(100%); */
+  
+}
+img {
+  width: 60vw;
+
+}
+
+.initials{
+  font-family: 'Bonheur Royale', cursive;
+  position: absolute;
+  top: 15%;
+  right: 25%;
+  font-size: 40rem;
+  opacity: 0.3;
+}
+.about {
+  display: flex;
+  justify-content: center;
+  /* margin-top: 150px; */
+}
+
+.text {
+color: white  ;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  margin-top: -85%;
+  color: white;
+}
+
+
+.discrip {
+  display: flex;
+  justify-content: center;
+  margin-top: 15vh;
+  opacity: 0.5;
+  color: white;
+}
+.quo {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.auo {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+
+
+.footer {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+  font-size: larger;
+  /* border: 3px solid black; */
+  /* margin-bottom: -400px; */
+  /* margin-left: -75; */
+  /* margin-top: 1%; */
+  background-color: black;
+  color: white;
+  height: 5vh;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  /* padding-top: 50px; */
+  justify-content: center;
+  margin-top: -50px;
+  /* margin-left: -200px; */
+}
+
+.fab {
+  padding: 10px;
+  font-size: 2rem;
+  color: white;
+}
+
+@media (max-width: 375px) {
+  .title {
+    margin-top: -35%;
+  }
+  .about {
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  .text {
+    color: white;
+  }
+  .image {
+    height: 55vh;
+  }
+}
+@media (max-width: 500px) {
+  .title {
+    margin-top: -35%;
+  }
+  .about {
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  .text {
+    color: white;
+  }
+  .image {
+    height: 55vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    margin-top: -35%;
+  }
+  .about {
+    display: flex;
+    justify-content: center;
+  }
+  .text {
+    color: white;
+  }
+  /* .image {
+    height: 55vh;
+  } */
+}
